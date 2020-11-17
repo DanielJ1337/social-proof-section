@@ -79,6 +79,10 @@ body{
     width: 100%; 
 }
 
+.review-text{
+    display: inline 
+}
+
 
 .review-one{
     margin-left: 3rem;
@@ -219,6 +223,7 @@ img.stars{
     }
 
     .review-text{
+        display: block;
         margin-top: 1rem;
         margin-left: .5rem;
     }
