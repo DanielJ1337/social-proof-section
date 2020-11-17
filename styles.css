@@ -199,6 +199,9 @@ img.stars{
         grid-column: 1;
         margin: 5rem 0 0.5rem;
     }
+    
+    .bold-heading{
+        font-size: 3rem;
 
     .subheading{
         margin: .5rem 0;
