@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-image: url("https://raw.githubusercontent.com/DanielJ1337/social-proof-section/b8834cf093559b9937230521c1eb423bf3860ef1/bg-pattern-top-desktop.svg"), url("https://raw.githubusercontent.com/DanielJ1337/social-proof-section/b8834cf093559b9937230521c1eb423bf3860ef1/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: -90rem 1rem, 50rem 10rem;
