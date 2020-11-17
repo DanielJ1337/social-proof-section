@@ -15,8 +15,9 @@ body{
     background-position: -90rem 1rem, 50rem 10rem;
     font-family: 'Spartan', sans-serif;
     font-size: 1.5rem;
-    margin: auto 0;
-    height: 100vh
+    margin: auto auto;
+    height: 100vh;
+    max-width: 1440px;
 
 }
 
