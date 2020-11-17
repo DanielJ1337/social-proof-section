@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -90rem 1rem, 50rem 10rem;
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.5rem;
+    margin: auto 0;
+    height: 100vh
+
+}
+
+.wrapper{
+    height:100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    max-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bold-heading, .subheading{
+    padding: 1rem 5rem;
+    
+}
+
+.text-container{
+    grid-column: 2 / 4;
+    margin-left: -3.5rem;
+}
+
+.bold-heading{
+    color: hsl(300, 43%, 22%);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subheading{
+    color: hsl(303, 10%, 53%);
+    line-height: 1.5;
+    font-size: 1.2rem;;
+    padding-right: 3.5rem;
+    margin: -1rem 0;
+    opacity: 0.7;
+}
+
+
+.review-container{
+    grid-column: 4 / 5;
+    grid-row: 1;
+    margin-left: -3rem;
+    width: 100%;
+}
+
+
+.review-one, .review-two, .review-three{
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    color: hsl(300, 43%, 22%);
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    width: 100%; 
+}
+
+
+.review-one{
+    margin-left: 3rem;
+}
+
+.review-two{
+    margin-left: 6rem;
+}
+
+.review-three{
+    margin-left: 9rem;
+}
+
+.cards-container{
+    display: flex;
+    grid-column: 2 / 6;
+    grid-row: 2;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.card-one, .card-two, .card-three{
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    margin: 0 1rem;
+    padding: 1.8rem;
+    position: relative;
+    width: 25%;
+}
+
+.heading-container{
+    padding-left: 5.5rem;
+}
+
+
+.full-name{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.card-one{
+    bottom: 8rem;
+}
+
+.card-two{
+    bottom: 6rem;
+}
+
+.card-three{
+    bottom: 4rem;
+} 
+
+
+img.profile-pic{
+    float: left;
+    border-radius: 100%; 
+    width: 30px;
+    margin-left: 1rem;
+}
+
+span{
+    padding: 0 0;
+    margin-left: -2rem;
+}
+
+img.stars{
+    width: 12px;
+    padding: 0 1rem;
+    position: relative;
+    
+}
+
+.status{
+    color: hsl(300, 24%, 96%);
+    font-size: 1rem;
+    opacity: .6;
+}
+.written-review{
+    color: #fff;
+    font-size: 1rem;
+    padding: 2.5rem 0rem 1.5rem; 
+}
+
+.attribution{
+    text-align: center;
+}
+
+@media(max-width: 375px){
+    body{
+        text-align: center;
+        max-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards-container{
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .wrapper{
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .text-container{
+        grid-row: 1;
+        grid-column: 1;
+        margin: 5rem 0 0.5rem;
+    }
+
+    .subheading{
+        margin: .5rem 0;
+    }
+
+    .review-container{
+        display: block;
+        grid-column: 1;
+        grid-row: 2 / 3;
+        width: 65%;
+        margin: auto auto;
+    }
+
+    .review-one, .review-two, .review-three{
+        margin-left: -.5rem;
+        margin-top: 1.5rem;
+        padding: 1rem .5rem;
+    }
+
+    span{
+        padding: 1rem 0 1rem;
+    }
+
+    .review-text{
+        margin-top: 1rem;
+        margin-left: .5rem;
+    }
+
+    .cards-container{
+        grid-column: 1;
+        grid-row:  3;
+        width: 70%;
+        margin-top: 12rem;
+    }
+
+    .card-one, .card-two, .card-three{
+        width: 80%;
+        padding: 1.8rem 2rem;
+        line-height: 1.7;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .card-one{
+        grid-row: 3 / 4;
+    }  
+    
+    .card-two{
+        grid-row: 4 / 5;
+    }
+
+    .card-three{
+        grid-row: 5 / 6;
+    }
+
+    .attribution{
+        grid-row: 6 / 7;
+    }
+}
